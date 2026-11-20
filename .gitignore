@@ -1,0 +1,30 @@
+# DiagnoTech — files that must NOT go to GitHub
+# (prepared 2026-11-20 for the GitHub upload Mostafa asked about)
+
+# Downloaded model weights — re-downloaded with: python scripts/fetch_models.py
+# Individual blobs are up to ~449 MB, far over GitHub's 100 MB file limit.
+models/
+
+# Python virtual environment — recreated with: python -m venv .venv
+.venv/
+
+# Real secrets — only .env.example is tracked; never commit .env
+.env
+
+# Runtime state
+logs/
+data/db/
+backups/
+diagnotech.pid
+*.log
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+.vscode/

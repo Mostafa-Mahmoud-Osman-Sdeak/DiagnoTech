@@ -1,0 +1,30 @@
+{
+  "sources": {
+    "xlsx_rows": 19584,
+    "csv_rows": 19607
+  },
+  "merged_rows": 19607,
+  "dropped_missing_q_or_a": 1,
+  "duplicates_removed": 5131,
+  "final_rows": 14475,
+  "patient_usable_rows": 445,
+  "respiratory_rows": 6595,
+  "patient_usable_respiratory_rows": 423,
+  "categories": {
+    "Medical Terms": 14060,
+    "Emergency Guidance": 107,
+    "Symptoms": 96,
+    "Causes & Risk Factors": 71,
+    "Disease Information": 42,
+    "General Guidance": 38,
+    "Medication Safety": 29,
+    "Prevention": 21,
+    "Medical Tests": 11
+  },
+  "source_counts": {
+    "Medical MCQ (train)": 13860,
+    "Mayo Clinic": 445,
+    "Medical MCQ (dev)": 154,
+    "Unknown": 16
+  }
+}

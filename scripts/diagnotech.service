@@ -1,0 +1,14 @@
+[Unit]
+Description=DiagnoTech – Arabic Respiratory Medical Assistant
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/USER/diagnotech
+Environment=PYTHONPATH=/home/USER/diagnotech/src
+ExecStart=/home/USER/diagnotech/.venv/bin/python -m diagnotech.main
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

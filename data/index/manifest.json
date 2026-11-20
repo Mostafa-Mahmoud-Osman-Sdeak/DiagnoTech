@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "embedder": "sentence-transformers",
+  "dim": 384,
+  "built_at": "2026-11-19T22:08:01.176971+00:00",
+  "embedding_model": "intfloat/multilingual-e5-small",
+  "patient_records": 445,
+  "chunks": 1399,
+  "saved_at": "2026-11-19T22:08:01.466301+00:00"
+}

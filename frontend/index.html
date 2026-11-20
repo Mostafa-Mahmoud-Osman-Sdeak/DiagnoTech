@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DiagnoTech – المساعد الطبي التنفسي</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <button id="menuBtn" class="menu-btn" title="المحادثات" aria-label="فتح قائمة المحادثات">☰</button>
+    <span class="logo">🫁</span>
+    <div>
+      <h1>DiagnoTech</h1>
+      <p>المساعد الطبي المتخصص في أمراض الجهاز التنفسي والصدر</p>
+    </div>
+  </div>
+  <div id="kbStatus" class="kb-status"><span class="dot"></span><span id="kbStatusText">جارٍ التحقق من قاعدة المعرفة…</span></div>
+</header>
+
+<div class="layout" id="layout">
+  <aside class="sidebar">
+    <button id="newConversationBtn" class="primary-btn">＋ محادثة جديدة</button>
+    <h2>المحادثات السابقة</h2>
+    <ul id="conversationList" class="conversation-list"></ul>
+    <div id="modelInfo" class="model-info"></div>
+  </aside>
+
+  <main class="chat-panel">
+    <div id="messages" class="messages">
+      <div class="msg assistant">
+        <div class="bubble">
+          أهلاً بك في DiagnoTech. اسألني عن أمراض الجهاز التنفسي والصدر:
+          الأعراض، الأسباب، الوقاية، الفحوصات، أو سلامة الأدوية.
+        </div>
+      </div>
+    </div>
+
+    <div id="loading" class="loading hidden">
+      <span class="dots"><span></span><span></span><span></span></span>
+      <span id="loadingText">جارٍ البحث في قاعدة المعرفة…</span>
+    </div>
+
+    <div class="chips" id="chips">
+      <button type="button" class="chip">ما هي أعراض الربو؟</button>
+      <button type="button" class="chip">ما هي أسباب التهاب الجيوب الأنفية الحاد؟</button>
+      <button type="button" class="chip">كيف يمكن الوقاية من الإنفلونزا؟</button>
+      <button type="button" class="chip">ما هي أعراض السل؟</button>
+    </div>
+
+    <form id="chatForm" class="composer">
+      <textarea id="messageInput" rows="2" placeholder="اكتب سؤالك الطبي بالعربية هنا…" required></textarea>
+      <button type="submit" id="sendBtn" class="primary-btn">إرسال</button>
+    </form>
+    <p class="disclaimer">
+      تنبيه: هذه المعلومات لأغراض التوعية الصحية العامة فقط، ولا تغني عن استشارة الطبيب.
+      في الحالات الطارئة اتصل بالإسعاف (123) أو توجّه إلى أقرب قسم طوارئ.
+    </p>
+  </main>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
